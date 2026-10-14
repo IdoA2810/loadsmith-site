@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loadsmith – Privacy policy</title>
+<meta name="description" content="What Loadsmith stores, where it is stored, who else sees it, and how to delete it.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <a href="/">Loadsmith</a>
+  <nav><a href="/privacy/">Privacy</a><a href="/delete-account/">Delete account</a></nav>
+</header>
+
+<h1>Privacy policy</h1>
+<p class="meta">Effective 14 October 2026 · applies to the Loadsmith test version</p>
+
+<p>Loadsmith is a lifting log for iPhone and Android, made by Ido Albeck in Israel. This page says what the app stores, where, who else sees it, and how you delete it. It is written to be read, not skimmed, and it describes what the app actually does today. When the app changes, this page changes with it, and the date above moves.</p>
+
+<div class="note">
+<strong>The short version.</strong> Your training log is yours. It is backed up to your account so it survives a lost phone. No advertising, no analytics, no selling or renting of data, ever. The only company that sees what you write is the one that has to in order to do the job you asked for: the database that stores the backup, the AI model when <em>you</em> ask it to write a program, the crash reporter if you leave it on, and the email service that sends your sign-in code.
+</div>
+
+<h2>Who is responsible</h2>
+<p>Ido Albeck, Israel, is the controller of this data. Write to <a href="mailto:support@loadsmith.app">support@loadsmith.app</a> for anything on this page.</p>
+
+<h2>What the app stores</h2>
+
+<h3>Your account</h3>
+<p>Your email address, which is how you sign in and how a sign-in code or password reset reaches you. If you sign in with Apple or Google, they also pass along the name on that account; the app does not show or use it, and it sits only in the sign-in record. Passwords are stored hashed by the authentication service, never readable.</p>
+
+<h3>About you</h3>
+<p>Whatever you give the app so it can plan sensibly: your date of birth or age, sex, height, bodyweight entries, and which units and effort scale you prefer. All of it is optional, and the app works without it.</p>
+
+<h3>Your training</h3>
+<p>Programs, training days, planned and logged sets: exercise, weight, reps, effort, rest, and any notes you type on a set, exercise or workout. Also what the app suggested mid-workout and whether you took it.</p>
+
+<h3>What you tell the program builder</h3>
+<p>When you talk to the AI program builder it remembers facts you tell it (“left shoulder clicks on overhead work”, “train four days a week”) so you do not have to repeat them. These facts can include injuries and other health information; the app treats them as sensitive data. You can read and delete each one under <strong>Settings → What the coach remembers</strong>. The conversation itself is kept only on your phone.</p>
+
+<h3>Bug reports</h3>
+<p>What you write, the screenshot you choose to attach (never one taken for you), the app version, the platform and the screen you were on. The screenshot is stored with the report, so attach one only if you are happy for the developer to see what is on it.</p>
+
+<h3>Crash reports (optional)</h3>
+<p>If <strong>Send crash reports</strong> is on in Settings, a crash sends the error, the screen it happened on, the app version and your account id. Never your workouts, your notes, or what you typed. The switch is honoured immediately.</p>
+
+<h3>Records the app keeps about itself</h3>
+<p>Which version of the in-app notice you agreed to and when; and for each AI request, the model used and the number of tokens it consumed, so the cost can be tracked. Not the content of the request.</p>
+
+<h3>What the app does not collect</h3>
+<p>No advertising identifier, no analytics or tracking SDK, no location, no contacts, no photos beyond the one you attach to a report, no microphone, no camera. The only device information recorded is the platform and OS version alongside a bug report or consent record.</p>
+
+<h2>Apple Health and Health Connect</h2>
+<p>Only if you connect it, and each part has its own switch in Settings:</p>
+<ul>
+  <li><strong>Read bodyweight</strong> reads your weight entries. Nothing else in Apple Health or Health Connect is requested.</li>
+  <li><strong>Send bodyweight</strong> writes the weights you type into Loadsmith.</li>
+  <li><strong>Send workouts</strong> writes each finished workout as a strength-training session with its start and end time. No sets, weights or reps.</li>
+</ul>
+<p>A weight read from Apple Health or Health Connect goes into your training log like any other weight, is backed up to your account with the rest of your log, and is shown only to you. It is never used for advertising, never sold, never used to build a profile of you, and never passed to the AI program builder: only a weight you typed yourself can be. It is stored by the database provider below as part of your backup and goes nowhere else. Turn a switch off and nothing more is read or written; what was already written stays in the health app until you delete it there, and what was read stays in your log until you delete it here. You can also revoke the app's access from inside Apple Health or Health Connect.</p>
+
+<h2>Who else sees it, and why</h2>
+<p>Each of these companies processes data on the developer's instructions, for one job, and is bound by its own agreement not to use it for anything else.</p>
+<table>
+<thead><tr><th>Company</th><th>Job</th><th>What reaches it</th></tr></thead>
+<tbody>
+<tr><td>Supabase (database hosted on AWS, Singapore)</td><td>Stores your account and the backup of your log; runs the sign-in and the server functions</td><td>Everything listed above except crash reports and the AI conversation</td></tr>
+<tr><td>Anthropic (United States)</td><td>Runs the Claude model behind the program builder, only when you use it</td><td>Your messages in that conversation, the facts it has remembered, your age, sex, height and typed bodyweight, your goals, your best recent sets per exercise, and how often you have trained lately. Not your email, not your account id, not health-app data. Anthropic keeps API inputs and outputs for up to 30 days to monitor abuse and does not use them to train its models.</td></tr>
+<tr><td>Sentry (European Union)</td><td>Crash reports, if the switch is on</td><td>The error, the screen, the app version, your account id. Kept 90 days.</td></tr>
+<tr><td>Resend (United States)</td><td>Sends email</td><td>Sign-in and password-reset codes to your address. When you send a bug report, the report, your email address and the screenshot are emailed to the developer through Resend.</td></tr>
+<tr><td>Apple, Google</td><td>Sign in with Apple / Google, if you choose it</td><td>Handled by them under their own policies; the app receives your email and name.</td></tr>
+<tr><td>Expo (United States)</td><td>Delivers app updates</td><td>When the app checks for an update it sends the platform and the app's runtime version. No account data.</td></tr>
+<tr><td>jsDelivr</td><td>Serves the exercise illustrations</td><td>Your IP address, as with any image on the internet. Nothing about you or your training.</td></tr>
+</tbody>
+</table>
+<p>Tapping “watch” on an exercise opens a YouTube search in your browser; from that point you are on YouTube under Google's policy.</p>
+<p>Nothing is sold, rented, or shared with advertisers or data brokers. Nothing is shared for anyone else's marketing. Data would be disclosed to an authority only where the law requires it.</p>
+
+<h2>Where it is stored and how it moves</h2>
+<p>The backup lives in Singapore (Supabase on AWS). The AI model and the email service are in the United States, the crash reporter in the European Union. If you are in the EU or UK, that means your data leaves your region; each of these providers offers standard contractual clauses or an equivalent for the transfer. Everything travels encrypted in transit, and the sign-in session on your phone is kept in the device's secure store.</p>
+
+<h2>How long it is kept</h2>
+<ul>
+  <li>Your log, profile, remembered facts and bug reports: until you delete them in the app, or until you delete your account.</li>
+  <li>Crash reports: 90 days at Sentry.</li>
+  <li>AI requests at Anthropic: up to 30 days, then gone.</li>
+  <li>The bug-report email in the developer's mailbox: until the report is dealt with, and no longer than 12 months.</li>
+  <li>Nothing is kept after account deletion except the deletion request itself, for up to 90 days, as the record that it was done.</li>
+</ul>
+
+<h2>Deleting and taking your data with you</h2>
+<p>In the app you can delete any workout, set, note, bodyweight or remembered fact, and sign out at any time. To remove the account and everything in it, follow <a href="/delete-account/">Delete your account</a>: during testing this is a request by email, completed within 30 days, and it will become a button in Settings. To receive a copy of your data, email <a href="mailto:support@loadsmith.app">support@loadsmith.app</a> from the address you signed in with; an in-app export is planned.</p>
+
+<h2>Your rights</h2>
+<p>Under Israel's Privacy Protection Law, 5741-1981, you may inspect the information held about you and ask for it to be corrected or deleted. If you are in the European Union or United Kingdom, the GDPR additionally gives you the rights of access, rectification, erasure, restriction, portability and objection, the right to withdraw consent at any time without affecting what was done before, and the right to complain to your supervisory authority. For all of these, write to <a href="mailto:support@loadsmith.app">support@loadsmith.app</a>; requests are answered within 30 days.</p>
+<p>For EU and UK readers, the legal bases are: performance of the contract with you (your account and backup), your consent (the AI program builder, Apple Health / Health Connect, crash reports, each of which you switch on yourself and can switch off), and the developer's legitimate interest in keeping the app working (bug reports you send, the cost record of AI requests).</p>
+
+<h2>Age</h2>
+<p>Loadsmith is for people aged 16 and over. It does not knowingly keep an account for anyone younger; if you believe one exists, write in and it will be deleted.</p>
+
+<h2>Changes</h2>
+<p>This page is the current version; earlier versions are in the public history of <a href="https://github.com/IdoA2810/loadsmith-site">its repository</a>. A change that matters to you – a new recipient of your data, a new kind of data – is shown in the app before it takes effect, and you are asked to agree again.</p>
+
+<footer>
+  © 2026 Ido Albeck · <a href="/privacy/">Privacy</a> · <a href="/delete-account/">Delete account</a> · <a href="mailto:support@loadsmith.app">support@loadsmith.app</a>
+</footer>
+</main>
+</body>
+</html>
